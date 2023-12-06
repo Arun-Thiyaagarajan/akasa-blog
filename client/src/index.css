@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Sacramento&display=swap');
+:root {
+    --pri: #FF6300;
+    --sec: #5C0FD9;
+
+    /* Primary Color Shades */
+    --pri-100: #ffefe6;
+    --pri-200: #ffe0cc;
+    --pri-300: #ffd0b3;
+    --pri-400: #ffc199;
+    --pri-500: #ffb180;
+    --pri-600: #ffa166;
+    --pri-700: #ff924d;
+    --pri-800: #ff8233;
+    --pri-900: #ff7319;
+
+    /* Secondary Color Shades */
+    --sec-100: #efe7fb;
+    --sec-200: #decff7;
+    --sec-300: #ceb7f4;
+    --sec-400: #be9ff0;
+    --sec-500: #ae87ec;
+    --sec-600: #9d6fe8;
+    --sec-700: #8d57e4;
+    --sec-800: #7d3fe1;
+    --sec-900: #6c27dd;
+    --sec-dk: #370982;
+
+    /* Other Colors */
+    --lt-black: #2a2a2a;
+    --grey-1: #4b4b4b;
+    --red: #cc0000;
+    --dk-red-1: #560000;
+
+    /* Less Opacity Colors */
+    --red-1: #c756569a;
+
+    /* Shadow CSS */
+    --shadow-1: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    --shadow-2: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    --shadow-3: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    --shadow-4: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    --shadow-5: 0px 5px 10px 2px rgba(8, 18, 13, 0.2);
+
+    --inset-shadow-1: inset 0px 0px 30px rgba(27, 67, 50, 0.4);
+    --inset-shadow-2: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+
+    /* Transition Effects */
+    --transition: 0.3s linear;
+    --transition-2: 0.3s ease-in-out;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--pri-100);
+    font-family: 'Poppins', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+main {
+    min-height: 51vh;
+}
+
+li {
+    list-style: none;
+}
+
+.title-case {
+    text-transform: capitalize;
+}
+
+.bold {
+    color: var(--grey-1);
+    font-weight: bold;
+}
+
+/* padding inline */
+.pd-inline {
+    padding-inline: 17rem;
+}
+
+@media screen and (max-width: 800px) {
+    .pd-inline {
+        padding-inline: 2rem;
+    }
+}
+
+/* ----------------- */
+/* Dash Component */
+/* ----------------- */
+
+.dash {
+    width: 100px;
+    height: 4px;
+    background-color: var(--pri);
+    margin: 0.5rem auto;
+    border-radius: 3px;
+}
+

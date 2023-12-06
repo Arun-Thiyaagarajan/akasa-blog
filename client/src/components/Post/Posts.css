@@ -1,0 +1,44 @@
+.post {
+    margin-bottom: 3rem;
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 1.5rem;
+}
+
+.post .texts {
+    display: grid;
+    gap: 0.5rem;
+}
+
+.post .texts h2 {
+    font-size: 1.3rem;
+    color: var(--grey-1);
+}
+
+.post .texts p {
+    font-size: 0.9rem;
+}
+
+.post .info {
+    color: #888;
+    font-weight: 600;
+    font-size: 0.5rem;
+    display: flex;
+    gap: 10px;
+}
+
+.info .author {
+    color: var(--sec);
+}
+
+.post-summary {
+    line-height: 1.4rem;
+}
+
+
+@media screen and (max-width: 800px) {
+    .post {
+        display: flex;
+        flex-direction: column;
+    }
+}

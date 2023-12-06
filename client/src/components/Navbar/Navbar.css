@@ -1,0 +1,101 @@
+nav {
+    width: 100%;
+    margin-top: 3vh;
+    margin-bottom: 1.5vh;
+    border-radius: 10px;
+    background: white;
+    box-shadow: var(--shadow-2);
+    /* max-height: 100vh; */
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.logo {
+    color: var(--pri);
+    font-family: 'Sacramento', cursive;
+}
+
+.links a {
+    color: var(--grey-1);
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    display: block;
+    padding: 0.5rem 1rem;
+    letter-spacing: var(--letter-spacing);
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.username {
+    font-weight: bold;
+    color: var(--pri);
+}
+
+.links a:hover {
+    color: var(--sec);
+}
+
+.links-container {
+    /* height: 0; */
+    overflow: hidden;
+    transition: var(--transition);
+}
+
+@media screen and (max-width: 768px) {
+
+    .links {
+        width: 100%;
+        padding: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .nav-toggle {
+        display: none;
+    }
+
+    .nav-header {
+        padding: 0;
+    }
+
+    .nav-center {
+        /* max-width: 1170px; */
+        margin: 0 auto;
+        display: flex;
+        min-height: 10vh;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        /* border: 2px solid; */
+    }
+    
+    .links-container {
+        height: auto !important;
+        padding-block: 0.5rem;
+    }
+    
+    .links {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .links a {
+        padding: 0;
+    }
+
+    .links a:hover {
+        padding: 0;
+        background: transparent;
+    }
+}
