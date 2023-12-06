@@ -5,12 +5,23 @@ import { Link } from 'react-router-dom'
 import { toast } from 'react-toastify';
 import { plant, rubik } from '../../assets';
 import Posts from '../../components/Post/Posts';
+import { useEffect, useState } from 'react';
 
 const Home = () => {
 
-    const handleOptions = () => {
-        toast.success("Will Be Implemented")
-    }
+    const [posts, setPosts] = useState([]);
+
+    useEffect(() => {
+        fetch('http://localhost:4000/post').then(response => {
+            response.json().then(posts => {
+                setPosts(posts);
+            });
+        });
+    }, []);
+
+    // const handleOptions = () => {
+    //     toast.success("Will Be Implemented")
+    // }
 
     return (
         <main className='pd-inline'>
@@ -19,7 +30,11 @@ const Home = () => {
                 <div className="posts-conatiner">
                     <h2 className='posts-box-title'>Your Feeds</h2>
                     <article className="posts">
-                        <Posts />
+                        {posts.length > 0 && posts.map((post, index) => {
+                            return (
+                                <Posts key={index} {...post} />
+                            )
+                        })}
                     </article>
                 </div>
                 {/* <article className="options-container">
