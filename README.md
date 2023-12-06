@@ -8,8 +8,6 @@ Akasa Blog is a simple and elegant blogging platform built with React, Vite, Nod
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Project Structure](#project-structure)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
