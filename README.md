@@ -1,4 +1,3 @@
-```markdown
 # Akasa Blog
 
 Akasa Blog is a simple and elegant blogging platform built with React, Vite, Node.js, and MongoDB.
@@ -63,14 +62,3 @@ The project structure is organized as follows:
 - **`/client`:** Contains the frontend code built with React and Vite.
 - **`/server`:** Contains the backend code built with Node.js.
 - **`/shared`:** Shared code or utilities between the frontend and backend.
-
-## Contributing
-
-Contributions are welcome! Please follow our [Contribution Guidelines](CONTRIBUTING.md) for details on the process.
-
-## License
-
-This project is licensed under the [MIT License](LICENSE).
-```
-
-Remember to replace placeholders such as `your-username` with your actual GitHub username. Additionally, consider adding more specific details about the project, deployment instructions, and any other relevant information for users and contributors.
