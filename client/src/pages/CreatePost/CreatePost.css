@@ -1,0 +1,26 @@
+section.create-post {
+    /* min-height: 90vh; */
+    width: 100%;
+    padding: 2rem 2rem 1rem;
+    border-radius: 10px;
+    background: white;
+    box-shadow: var(--shadow-2);
+}
+
+.page-title {
+    font-weight: 300;
+    color: var(--grey-1);
+    margin-bottom: 1rem;
+}
+
+.input-field label {
+    width: 10rem;
+    font-weight: 500;
+    color: var(--grey-1);
+    padding-inline: 1rem;
+}
+
+.cp {
+    margin-bottom: 1.5rem;
+}
+

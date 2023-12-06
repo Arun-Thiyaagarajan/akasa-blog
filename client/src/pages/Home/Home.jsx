@@ -22,7 +22,7 @@ const Home = () => {
                         <Posts />
                     </article>
                 </div>
-                <article className="options-container">
+                {/* <article className="options-container">
                     <ul className='options'>
                         <Link to='/create_post'>
                             <li className='option'>
@@ -35,7 +35,7 @@ const Home = () => {
                             <p style={{ fontWeight: "400" }}>Favourites</p>
                         </li>
                     </ul>
-                </article>
+                </article> */}
             </section>
         </main>
     )

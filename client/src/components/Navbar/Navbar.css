@@ -32,6 +32,14 @@ nav {
     cursor: pointer;
 }
 
+.fa-arrow-right-from-bracket {
+    transition: var(--transition);
+}
+
+.fa-arrow-right-from-bracket:hover {
+    transform: scale(1.03);
+}
+
 .username {
     font-weight: bold;
     color: var(--pri);

@@ -53,7 +53,10 @@ const Navbar = () => {
                         {username && (
                             <>
                                 <li className='title-case bold'>Hello <span className='username'>{username}!</span></li>
-                                <a onClick={logout}>Logout</a>
+                                <li>
+                                    <Link to='/create_post'>New Post</Link>
+                                </li>
+                                <a onClick={logout}><i className="fa-solid fa-arrow-right-from-bracket fa-xl" style={{color: "#4b4b4b"}}></i></a>
                             </>
                         )}
                         {!username && (
