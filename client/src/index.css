@@ -98,7 +98,7 @@ li {
     padding-inline: 17rem;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
     .pd-inline {
         padding-inline: 2rem;
     }

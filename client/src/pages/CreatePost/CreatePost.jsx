@@ -3,6 +3,9 @@ import Navbar from '../../components/Navbar/Navbar';
 import './CreatePost.css'
 import ReactQuill from 'react-quill'
 import 'react-quill/dist/quill.snow.css'
+import { useNavigate } from 'react-router-dom';
+import { toast } from 'react-toastify'
+
 const CreatePost = () => {
 
     const [title, setTitle] = useState('')
@@ -10,8 +13,25 @@ const CreatePost = () => {
     const [content, setContent] = useState('')
     const [files, setFiles] = useState('');
 
+    const navigate = useNavigate();
+
     const handleForm = async (e) => {
         e.preventDefault();
+        const data = new FormData();
+        data.set('title', title);
+        data.set('summary', summary);
+        data.set('content', content);
+        data.set('file', files[0]);
+        e.preventDefault();
+        const response = await fetch('http://localhost:4000/post', {
+            method: 'POST',
+            body: data,
+            credentials: 'include',
+        });
+        if (response.ok) {
+            toast.success('Post Created Successfully!')
+            navigate('/')
+        }
     }
 
     return (
@@ -23,6 +43,7 @@ const CreatePost = () => {
                     <div className="input-field cp">
                         <label htmlFor="title">Title</label>
                         <input
+                            value={title}
                             type="text"
                             id='title'
                             name='title'
@@ -33,6 +54,7 @@ const CreatePost = () => {
                     <div className="input-field cp">
                         <label htmlFor="summary">Summary</label>
                         <input
+                            value={summary}
                             type="text"
                             id='summary'
                             name='summary'
@@ -46,11 +68,12 @@ const CreatePost = () => {
                             type="file"
                             id='image'
                             name='image'
+                            onChange={e => setFiles(e.target.files)}       
                             required />
                     </div>
                     <ReactQuill onChange={newValue => setContent(newValue)} value={content} />
                     
-                    <button className="btn cp">Create Post</button>
+                    <button type='submit' className="btn cp">Create Post</button>
                 </form>
             </section>
         </main>

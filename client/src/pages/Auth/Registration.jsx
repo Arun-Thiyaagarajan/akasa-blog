@@ -22,6 +22,8 @@ const Registration = () => {
     })
     if (response.status === 200) {
       toast.success('Hurey :) Registration Success!')
+      setUsername('')
+      setPassword('')
       navigate('/login')
     } else {
       toast.error('Oops! Registration Failed. Try again!')
@@ -52,6 +54,7 @@ const Registration = () => {
                   <i className="fa-regular fa-user" style={{ color: '#2e086d' }}></i>
                 </button>
                 <input
+                  value={username}
                   type="text"
                   id='username'
                   name='userName'
@@ -65,6 +68,7 @@ const Registration = () => {
                   <i className="fa-solid fa-key" style={{ color: '#2e086d' }}></i>
                 </button>
                 <input
+                  value={password}
                   type="password"
                   id='password'
                   name='password'

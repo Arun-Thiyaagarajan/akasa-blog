@@ -60,6 +60,7 @@ const Authentication = () => {
                                     <i className="fa-regular fa-user" style={{ color: '#2e086d' }}></i>
                                 </button>
                                 <input
+                                    value={username}
                                     type="text"
                                     id='username'
                                     name='userName'
@@ -73,6 +74,7 @@ const Authentication = () => {
                                     <i className="fa-solid fa-key" style={{ color: '#2e086d' }}></i>
                                 </button>
                                 <input
+                                    value={password}
                                     type="password"
                                     id='password'
                                     name='password'

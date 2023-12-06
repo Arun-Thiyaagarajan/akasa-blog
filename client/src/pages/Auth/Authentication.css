@@ -56,7 +56,7 @@
     border-radius: 5px;
     margin-bottom: 2rem;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .ip-icon {
@@ -68,8 +68,7 @@
     background-color: #ededed;
 }
 
-.input-field input,
-.input {
+.input-field input{
     width: 100%;
     padding: 0.7rem 0.5rem;
     border: none;
@@ -79,18 +78,15 @@
     color: var(--grey-1);
     outline: none;
     transition: box-shadow 0.5s linear, border 0.1s ease-in-out;
-    white-space: pre-wrap;
 }
 
-.input-field input:focus,
-.input:focus {
+.input-field input:focus {
     box-shadow: var(--shadow-2);
     border-bottom: 3px solid var(--pri-900);
 }
 
 /* Applies for all input */
-input::placeholder,
-.input::placeholder {
+input::placeholder{
     font-family: inherit;
     color: #aaa;
     font-weight: 300;

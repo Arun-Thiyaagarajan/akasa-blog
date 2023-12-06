@@ -51,7 +51,7 @@ Before you begin, ensure you have met the following requirements:
    ```
 
 5. **Open your browser:**
-   Visit [http://localhost:3000](http://localhost:3000) to view the Akasa Blog.
+   Visit [http://localhost:3000](http://localhost:5173) to view the Akasa Blog.
 
 ## Project Structure
 
